@@ -1,5 +1,3 @@
-// src/Menu.ts
-
 export interface MenuItem {
   id: number;
   label: string;
@@ -9,27 +7,37 @@ export interface MenuItem {
 export const menuItems: MenuItem[] = [
   {
     id: 1,
-    label: "Start",
-    path: "/start",
+    label: "Home",
+    path: "/",
   },
   {
     id: 2,
-    label: "About",
-    path: "/about",
+    label: "About.exe",
+    path: "/storyboard",
   },
   {
     id: 3,
-    label: "Projects",
+    label: "Vessel Log",
     path: "/projects",
   },
   {
     id: 4,
-    label: "Story Board",
-    path: "/storyboard",
+    label: "Digital Cargo",
+    path: "/skills",
   },
   {
     id: 5,
-    label: "Settings",
-    path: "/settings",
+    label: "Contact",
+    path: "/contact",
+  },
+  {
+    id: 5,
+    label: "Message in a Bottle",
+    path: "/comments",
+  },
+  {
+    id: 7,
+    label: "The Ship's Manifest",
+    path: "/credits",
   },
 ];

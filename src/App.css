@@ -10,6 +10,9 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/*Animations - START*/
+
+/*Animations - END*/
 .background-container {
   position: relative;
   width: 100vw;
@@ -31,6 +34,11 @@
   z-index: -1;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 h1 {
   font-weight: bolder;
   text-transform: uppercase;
@@ -38,4 +46,12 @@ h1 {
 
 h2 {
   font-weight: 500;
+  font-size: large;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 18px;
+  }
 }
