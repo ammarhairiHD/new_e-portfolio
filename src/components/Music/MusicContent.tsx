@@ -1,22 +1,21 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import type { ReactNode } from "react";
+import longnight from "../assets/music/longnight.mp3";
+import moonlightcoffee from "../assets/music/moonlightcoffee.mp3";
+import softvibes from "../assets/music/softvibes.mp3";
+import soothingwaves from "../assets/music/soothing-ocean-waves.mp3";
+
 
 type Track = {
   label: string;
   src: string;
 };
 
-const tracks: Track[] = [
-  { label: "Long Night by Aventure", src: "src/assets/music/longnight.mp3" },
-  {
-    label: "Moonlight Coffee by Yunior Arronte",
-    src: "src/assets/music/moonlightcoffee.mp3",
-  },
-  { label: "Soft Vibes by Vital", src: "src/assets/music/softvibes.mp3" },
-  {
-    label: "Soothing Ocean Waves",
-    src: "src/assets/music/soothing-ocean-waves.mp3",
-  },
+const tracks = [
+  { label: "Long Night by Aventure", src: longnight },
+  { label: "Moonlight Coffee by Yunior Arronte", src: moonlightcoffee },
+  { label: "Soft Vibes by Vital", src: softvibes },
+  { label: "Soothing Ocean Waves", src: soothingwaves },
 ];
 
 type MusicContextType = {
