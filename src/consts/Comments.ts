@@ -16,4 +16,14 @@ export const comments: Comment[] = [
     message:
       "Ahoy, ye salty creature! I be hopin’ ye’ve found th’ message in th’ bottle I cast adrift many moons ago. Yer digital ship be a mighty beauty on th’ seven seas o’ code! May the winds be fair, an’ may our paths cross again, matey!",
   },
+  {
+    name: "Hazeem",
+    role: "Friend",
+    message: "FLY HIGH AMMAR ! 🚀",
+  },
+  {
+    name: "PaanJoe",
+    role: "Product Manager at GNU Govtech Kementerian Digital",
+    message: "Padu Portfolio, keep it up!",
+  },
 ];
