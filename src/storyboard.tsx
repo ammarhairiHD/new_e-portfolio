@@ -110,10 +110,12 @@ export default function Storyboard() {
               {/* Background overlay */}
               <div className="absolute inset-0 bg-black opacity-80 rounded-lg pointer-events-none" />
 
-              <p className="absolute bottom-44 flex flex-row items-center gap-2 text-gray-400">
-                <MoveDown />
-                scroll down
-              </p>
+              {activeScene === 0 && (
+                <p className="absolute bottom-44 flex flex-row items-center gap-2 text-gray-400">
+                  <MoveDown />
+                  scroll down
+                </p>
+              )}
 
               {/* Content container */}
               <div
