@@ -6,6 +6,7 @@ import App from "./App";
 import { MusicProvider } from "./components/Music/MusicContent";
 import Navbar from "./components/Navbar";
 import MusicPlayer from "./components/Music/MusicPlayer";
+import { Analytics } from "@vercel/analytics/react";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")!).render(
         <Navbar />
         <App />
         <MusicPlayer />
+        <Analytics />
       </MusicProvider>
     </BrowserRouter>
   </StrictMode>

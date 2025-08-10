@@ -7,7 +7,6 @@ type Track = {
 };
 
 const tracks = [
-
   { label: "Long Night by Aventure", src: "/music/longnight.mp3" },
   {
     label: "Moonlight Coffee by Yunior Arronte",
@@ -15,8 +14,6 @@ const tracks = [
   },
   { label: "Soft Vibes by Vital", src: "/music/softvibes.mp3" },
   { label: "Soothing Ocean Waves", src: "/music/soothing-ocean-waves.mp3" },
-
-
 ];
 
 type MusicContextType = {
