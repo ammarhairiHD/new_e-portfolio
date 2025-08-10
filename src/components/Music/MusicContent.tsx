@@ -1,10 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import type { ReactNode } from "react";
-import longnight from "../../assets/music/longnight.mp3";
-import moonlightcoffee from "../../assets/music/moonlightcoffee.mp3";
-import softvibes from "../../assets/music/softvibes.mp3";
-import soothingwaves from "../../assets/music/soothing-ocean-waves.mp3";
-
 
 type Track = {
   label: string;
