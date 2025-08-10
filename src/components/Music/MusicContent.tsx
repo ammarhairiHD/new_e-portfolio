@@ -6,17 +6,14 @@ type Track = {
   src: string;
 };
 
-const tracks: Track[] = [
-  { label: "Long Night by Aventure", src: "src/assets/music/longnight.mp3" },
+const tracks = [
+  { label: "Long Night by Aventure", src: "/music/longnight.mp3" },
   {
     label: "Moonlight Coffee by Yunior Arronte",
-    src: "src/assets/music/moonlightcoffee.mp3",
+    src: "/music/moonlightcoffee.mp3",
   },
-  { label: "Soft Vibes by Vital", src: "src/assets/music/softvibes.mp3" },
-  {
-    label: "Soothing Ocean Waves",
-    src: "src/assets/music/soothing-ocean-waves.mp3",
-  },
+  { label: "Soft Vibes by Vital", src: "/music/softvibes.mp3" },
+  { label: "Soothing Ocean Waves", src: "/music/soothing-ocean-waves.mp3" },
 ];
 
 type MusicContextType = {

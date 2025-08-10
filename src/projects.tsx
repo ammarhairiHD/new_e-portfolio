@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { animate, svg, stagger } from "animejs";
-import { vesselLogItems } from "./consts/projects";
-import type { VesselLogItem } from "./consts/projects";
+import { vesselLogItems } from "./consts/Projects";
+import type { VesselLogItem } from "./consts/Projects";
 import { ShipWheel, Anchor, MoveDown } from "lucide-react";
 
 function VesselLogTitle() {
