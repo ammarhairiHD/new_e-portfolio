@@ -26,4 +26,36 @@ export const comments: Comment[] = [
     role: "Product Manager at GNU Govtech Kementerian Digital",
     message: "Padu Portfolio, keep it up!",
   },
+  {
+    name: "Fawahh",
+    role: "Friend / Colleague",
+    message: "Great job Ammar! Your journey such an inspiring! ",
+  },
+  {
+    name: "Bob marley",
+    role: "Friends",
+    message: "You got it man we believe in you mate",
+  },
+  {
+    name: "Haikal",
+    role: "TUBE 11",
+    message: "Wadap. All the best Ammar!",
+  },
+  {
+    name: "Mi",
+    role: "Friends ",
+    message:
+      "Nice e-Portfolio mate, interesting features provided that peek me some interest on scrolling even more and get to know what it all about… good job bro",
+  },
+  {
+    name: "Faiz",
+    role: "Friend",
+    message: "Superb 🫡",
+  },
+  {
+    name: "Kert",
+    role: "UI Designer, GNU, MyDigital",
+    message:
+      "Power gila weh. I love the aesthetic of the web, bringing me back to the 90s",
+  },
 ];
