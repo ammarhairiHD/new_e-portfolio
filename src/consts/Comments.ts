@@ -58,4 +58,10 @@ export const comments: Comment[] = [
     message:
       "Power gila weh. I love the aesthetic of the web, bringing me back to the 90s",
   },
+  {
+    name: "Ahmadul hakimi al-amin",
+    role: "daripada bunyi  vacuum ",
+    message:
+      "ammar kemah sokmo doh lah semak .. Teruskan usaha ammar senantiasa berbuat baik kerana yang baik dah mula hilang ..",
+  },
 ];
