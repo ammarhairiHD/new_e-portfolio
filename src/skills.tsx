@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { animate, svg, stagger } from "animejs";
 import type { SkillItem, SkillCategory } from "./consts/Skills";
 import { skillItems } from "./consts/Skills";
-import { Code, Server, Database, ToolCase, MoveDown } from "lucide-react";
+import { Code, Server, Database, ToolCase, MoveDown, Cloud } from "lucide-react";
 
 function NavigationChartTitle() {
   const svgRef = useRef<SVGSVGElement | null>(null);
@@ -127,6 +127,8 @@ export default function SkillsPage() {
         return <Database size={20} className="inline-block mr-2" />;
       case "tool":
         return <ToolCase size={20} className="inline-block mr-2" />;
+        case "cloud computing":
+        return <Cloud size={20} className="inline-block mr-2" />;
       default:
         return null;
     }
@@ -170,7 +172,7 @@ export default function SkillsPage() {
           >
             All
           </button>
-          {["language", "framework", "database", "tool"].map((category) => (
+          {["language", "framework", "database", "tool", "cloud computing"].map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category as SkillCategory)}

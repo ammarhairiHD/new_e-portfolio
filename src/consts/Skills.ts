@@ -1,4 +1,4 @@
-export type SkillCategory = "language" | "framework" | "database" | "tool";
+export type SkillCategory = "language" | "framework" | "database" | "tool" | "cloud computing";
 
 export interface SkillItem {
   id: number;
@@ -25,78 +25,103 @@ export const skillItems: SkillItem[] = [
   },
   {
     id: 4,
-    label: "C++",
+    label: "Java",
     category: "language",
+  },
+  {
+    id: 5,
+    label: "Kotlin",
+    category: "language"
   },
 
   // Frameworks & Libraries
   {
-    id: 5,
+    id: 6,
     label: "Next.Js",
     category: "framework",
   },
   {
-    id: 6,
+    id: 7,
     label: "React",
     category: "framework",
   },
   {
-    id: 7,
+    id: 8,
     label: "Django",
     category: "framework",
   },
-
+  {
+    id: 9,
+    label: "Jetpack Compose ",
+    category: "framework",
+  },
   // Databases
   {
-    id: 8,
+    id: 10,
     label: "PostgreSQL",
     category: "database",
   },
   {
-    id: 9,
-    label: "SQL",
+    id: 10,
+    label: "MySQL",
+    category: "database",
+  },
+  {
+    id: 11,
+    label: "MongoDB",
     category: "database",
   },
 
   // Tools
   {
-    id: 10,
+    id: 12,
     label: "Vercel",
     category: "tool",
   },
   {
-    id: 11,
+    id: 13,
     label: "Figma",
     category: "tool",
   },
   {
-    id: 12,
+    id: 14,
     label: "Wordpress",
     category: "tool",
   },
   {
-    id: 13,
+    id: 15,
     label: "M365",
     category: "tool",
   },
   {
-    id: 14,
+    id: 16,
     label: "GitHub",
     category: "tool",
   },
   {
-    id: 15,
+    id: 17,
     label: "Postman",
     category: "tool",
   },
   {
-    id: 16,
+    id: 18,
     label: "Nmap",
     category: "tool",
   },
   {
-    id: 17,
+    id: 19,
     label: "Nikto",
     category: "tool",
   },
+  // Cloud Computing
+  {
+    id: 20,
+    label: "Google Cloud",
+    category: "cloud computing",
+  },
+  {
+    id: 21,
+    label: "AWS",
+    category: "cloud computing",
+  }
 ];
