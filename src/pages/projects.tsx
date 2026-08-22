@@ -101,6 +101,20 @@ export default function VesselLog() {
         {item.label}
       </h3>
       <p className="text-gray-300 text-sm">{item.description}</p>
+      {item.isReady ? (
+        <a 
+          href={item.link} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="my-3 underline text-[#b53389]"
+        >
+          Visit Project
+        </a>
+      ) : (
+        <span className="my-3 text-gray-500 cursor-not-allowed">
+          Link is not ready - Internal / Staging Only (Coming Soon)
+        </span>
+      )}
     </div>
   );
 

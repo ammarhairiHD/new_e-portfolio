@@ -28,11 +28,9 @@ export default function Storyboard() {
           className="absolute inset-0 bg-cover bg-center opacity-90 scale-105"
           style={{ backgroundImage: "url('/story/storyboard_menu.jpeg')" }}
         />
-        {/* Vignette / Dark Gradient Overlay to isolate text readability */}
         <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-black" />
       </div>
 
-      {/* Main Content Area */}
       <div className="relative z-10 max-w-6xl mx-auto w-full">
         <header className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold text-[#04bade] mb-4">
