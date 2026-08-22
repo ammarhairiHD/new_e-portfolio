@@ -31,97 +31,119 @@ export const skillItems: SkillItem[] = [
   {
     id: 5,
     label: "Kotlin",
-    category: "language"
+    category: "language",
+  },
+  {
+    id: 6,
+    label: "PHP",
+    category: "language",
   },
 
   // Frameworks & Libraries
   {
-    id: 6,
+    id: 7,
     label: "Next.Js",
     category: "framework",
   },
   {
-    id: 7,
+    id: 8,
     label: "React",
     category: "framework",
   },
   {
-    id: 8,
+    id: 9,
     label: "Django",
     category: "framework",
   },
   {
-    id: 9,
-    label: "Jetpack Compose ",
+    id: 10,
+    label: "Jetpack Compose",
     category: "framework",
   },
+  {
+    id: 11,
+    label: "Laravel",
+    category: "framework",
+  },
+
   // Databases
   {
-    id: 10,
+    id: 12,
     label: "PostgreSQL",
     category: "database",
   },
   {
-    id: 10,
+    id: 13,
     label: "MySQL",
     category: "database",
   },
   {
-    id: 11,
+    id: 14,
+    label: "Oracle DB",
+    category: "database",
+  },
+  {
+    id: 15,
     label: "MongoDB",
     category: "database",
   },
 
   // Tools
   {
-    id: 12,
+    id: 16,
     label: "Vercel",
     category: "tool",
   },
   {
-    id: 13,
+    id: 17,
     label: "Figma",
     category: "tool",
   },
   {
-    id: 14,
+    id: 18,
     label: "Wordpress",
     category: "tool",
   },
   {
-    id: 15,
+    id: 19,
     label: "M365",
     category: "tool",
   },
   {
-    id: 16,
+    id: 20,
     label: "GitHub",
     category: "tool",
   },
   {
-    id: 17,
+    id: 21,
+    label: "Gitlab",
+    category: "tool",
+  },
+  {
+    id: 22,
     label: "Postman",
     category: "tool",
   },
   {
-    id: 18,
+    id: 23,
     label: "Nmap",
     category: "tool",
   },
   {
-    id: 19,
+    id: 24,
     label: "Nikto",
     category: "tool",
   },
+
   // Cloud Computing
   {
-    id: 20,
+    id: 25,
     label: "Google Cloud",
     category: "cloud computing",
   },
   {
-    id: 21,
+    id: 26,
     label: "AWS",
     category: "cloud computing",
-  }
+  },
 ];

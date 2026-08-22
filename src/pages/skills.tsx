@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { animate, svg, stagger } from "animejs";
-import type { SkillItem, SkillCategory } from "./consts/Skills";
-import { skillItems } from "./consts/Skills";
+import type { SkillItem, SkillCategory } from "../consts/Skills";
+import { skillItems } from "../consts/Skills";
 import { Code, Server, Database, ToolCase, MoveDown, Cloud } from "lucide-react";
 
 function NavigationChartTitle() {
