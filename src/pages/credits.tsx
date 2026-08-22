@@ -1,6 +1,6 @@
 import { Music, Volume2, Zap } from "lucide-react";
-import type { AttributionItem } from "./consts/credits";
-import { attributions } from "./consts/credits";
+import type { AttributionItem } from "../consts/credits";
+import { attributions } from "../consts/credits";
 
 export default function AttributionsPage() {
   const musicCredits = attributions.filter((item) => item.type === "music");

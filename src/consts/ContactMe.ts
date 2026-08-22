@@ -35,7 +35,7 @@ export const socialLinks: SocialLinkItem[] = [
   {
     id: 4,
     platform: "Whatapps",
-    url: "https://wa.me/+60126171404",
+    url: "https://wa.me/+60122461144",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ export const socialLinks: SocialLinkItem[] = [
   {
     id: 6,
     platform: "Email",
-    url: "mailto:halusinasibyammar@gmail.com",
+    url: "mailto:ammarhairi@gmail.com",
   },
 ];
 

@@ -22,21 +22,26 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 4,
+    label: "Captains Deck",
+    path: "/awards",
+  },
+  {
+    id: 5,
     label: "Digital Cargo",
     path: "/skills",
   },
   {
-    id: 5,
+    id: 6,
     label: "Contact",
     path: "/contact",
   },
   {
-    id: 5,
+    id: 7,
     label: "Message in a Bottle",
     path: "/comments",
   },
   {
-    id: 7,
+    id: 8,
     label: "The Ship's Manifest",
     path: "/credits",
   },

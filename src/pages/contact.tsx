@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import type { ProfileImageItem } from "./consts/ContactMe";
-import { socialLinks, profileImages } from "./consts/ContactMe";
+import type { ProfileImageItem } from "../consts/ContactMe";
+import { socialLinks, profileImages } from "../consts/ContactMe";
 import {
   Instagram,
   Youtube,
