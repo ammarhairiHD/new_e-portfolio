@@ -54,6 +54,30 @@ export default function Awards() {
                 <p className="text-sm text-white/80 leading-relaxed font-['Lexend'] mb-6">
                   {award.description}
                 </p>
+
+                {award.awards && award.awards.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-3 mb-6">
+                    {award.awards.map((sub) =>
+                      sub.ribbon ? (
+                        <img
+                          key={sub.name}
+                          src={sub.ribbon}
+                          alt={sub.name}
+                          title={sub.name}
+                          className="h-14 w-auto object-contain"
+                        />
+                      ) : (
+                        <span
+                          key={sub.name}
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-[#b53389]/10 text-[#b53389] border border-[#b53389]/30"
+                        >
+                          <Trophy size={12} />
+                          {sub.name}
+                        </span>
+                      )
+                    )}
+                  </div>
+                )}
               </div>
 
               {award.link && (
