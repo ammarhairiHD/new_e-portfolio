@@ -27,7 +27,7 @@ export const vesselLogItems: VesselLogItem[] = [
     description:
       "A native mobile app built to enhance women's safety with immediate emergency response tools, while raising cross-gender awareness on safety and sexuality to combat sexual misconduct through software engineering.",
     type: "project",
-    link: "https://guardina.ammarhairi.tech/en/contributors",
+    link: "https://guardina.org/en/contributors",
     isReady: true,
   },
   // --- Contributions ---
@@ -79,7 +79,7 @@ export const vesselLogItems: VesselLogItem[] = [
       "Engineered on-premise infrastructure via SSH/PDSA while adapting to PHP to build backend functionality. Maintained staging/local database workflows, collaborated cross-functionally to translate business requirements into technical implementations, and managed deployment setups.",
     type: "contribution",
     link: "Link is not ready - Internal / Staging Only",
-    isReady: false
+    isReady: false,
   },
   {
     id: 8,
