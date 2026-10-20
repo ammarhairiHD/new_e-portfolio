@@ -81,14 +81,32 @@ export default function StoryDetail() {
     }
   }, [targetStory, navigate, activeStory, storyIndex]);
 
+  // Keyboard navigation with left/right arrow keys
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (isTransitioning) return;
+      if (e.key === "ArrowLeft" && prevStory) {
+        navigate(`/storyboard/${prevStory.level}/${prevStory.slug}`);
+      } else if (e.key === "ArrowRight" && nextStory) {
+        navigate(`/storyboard/${nextStory.level}/${nextStory.slug}`);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [prevStory, nextStory, isTransitioning, navigate]);
+
   if (!activeStory) return null;
+
+  const chapterImages = [activeStory.image1, activeStory.image2].filter(
+    (src): src is string => Boolean(src)
+  );
 
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-fixed relative overflow-x-hidden transition-all duration-700"
       style={{ backgroundImage: `url(${activeStory.background})` }}
     >
-      <div className="absolute inset-0 bg-black/85" />
+      <div className="absolute inset-0 bg-black/60" />
 
       <main className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 pt-24 pb-20">
         <div className="max-w-2xl w-full text-center text-white">
@@ -109,6 +127,28 @@ export default function StoryDetail() {
               {activeStory.description}
             </p>
 
+            {chapterImages.length > 0 && (
+              <div
+                className={`grid gap-4 mb-6 ${
+                  chapterImages.length > 1 ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1 max-w-lg mx-auto"
+                }`}
+              >
+                {chapterImages.map((src) => (
+                  <div
+                    key={src}
+                    className="aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-black/40"
+                  >
+                    <img
+                      src={src}
+                      alt={activeStory.label}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
+
             {activeStory.story && (
               <p className="font-['Lexend'] sm:text-lg leading-relaxed mb-6 text-white/90">
                 {activeStory.story}
@@ -122,73 +162,37 @@ export default function StoryDetail() {
             )}
           </div>
 
-          {/*  Navigation Controls  */}
-          <div className="mt-12 sm:mt-16 w-full max-w-xl mx-auto">
-            <nav className={`flex flex-col sm:flex-row items-center justify-between gap-4 p-3 sm:p-4 rounded-2xl bg-black/60 border border-white/10 backdrop-blur-md shadow-2xl ${isTransitioning ? 'pointer-events-none' : ''}`}>
-              
-              <Link
-                to="/storyboard"
-                className="flex items-center gap-2 px-3 py-1.5 text-xs sm:text-sm text-white/70 hover:text-[#04bade] transition-colors rounded-lg hover:bg-white/5 order-2 sm:order-1"
-              >
-                <Home size={16} />
-                <span>All Levels</span>
-              </Link>
-
-              <div className="flex flex-col items-center gap-1.5 order-1 sm:order-2">
-                <div className="flex items-center gap-2">
-                  {allChapters.map((item, i) => (
-                    <Link
-                      key={`${item.level}-${item.slug}`}
-                      to={`/storyboard/${item.level}/${item.slug}`}
-                      className={`h-2 rounded-full transition-all duration-300 ${
-                        i === storyIndex
-                          ? "bg-[#b53389] w-6 scale-100"
-                          : "bg-white/30 hover:bg-white/70 w-2"
-                      }`}
-                      aria-label={`Go to Level ${item.level} Chapter`}
-                    />
-                  ))}
-                </div>
-                <span className="text-[11px] font-mono text-white/50">
-                  <span className="text-[#04bade]">LVL {activeStory.level}</span> • {storyIndex + 1}/{allChapters.length}
-                </span>
-              </div>
-
-              <div className="flex items-center gap-2 order-3">
-                {prevStory ? (
-                  <Link
-                    to={`/storyboard/${prevStory.level}/${prevStory.slug}`}
-                    className="p-2 sm:px-3 sm:py-1.5 rounded-lg bg-white/5 hover:bg-[#04bade]/20 text-white/80 hover:text-[#04bade] transition-all flex items-center gap-1 text-xs sm:text-sm font-medium border border-white/5 hover:border-[#04bade]/30"
-                  >
-                    <ArrowLeft size={16} />
-                    <span className="hidden sm:inline">Prev</span>
-                  </Link>
-                ) : (
-                  <span className="p-2 sm:px-3 sm:py-1.5 text-white/20 flex items-center gap-1 text-xs sm:text-sm cursor-not-allowed">
-                    <ArrowLeft size={16} />
-                  </span>
-                )}
-
-                {nextStory ? (
-                  <Link
-                    to={`/storyboard/${nextStory.level}/${nextStory.slug}`}
-                    className="p-2 sm:px-3 sm:py-1.5 rounded-lg bg-white/5 hover:bg-[#04bade]/20 text-white/80 hover:text-[#04bade] transition-all flex items-center gap-1 text-xs sm:text-sm font-medium border border-white/5 hover:border-[#04bade]/30"
-                  >
-                    <span className="hidden sm:inline">Next</span>
-                    <ArrowRight size={16} />
-                  </Link>
-                ) : (
-                  <span className="p-2 sm:px-3 sm:py-1.5 text-white/20 flex items-center gap-1 text-xs sm:text-sm cursor-not-allowed">
-                    <ArrowRight size={16} />
-                  </span>
-                )}
-              </div>
-
-            </nav>
-          </div>
+          <Link
+            to="/storyboard"
+            className="mt-12 sm:mt-16 inline-flex items-center gap-2 px-3 py-1.5 text-xs sm:text-sm text-white/50 hover:text-[#04bade] transition-colors"
+          >
+            <Home size={16} />
+            <span>All Levels</span>
+          </Link>
 
         </div>
       </main>
+
+      {/*  Side Navigation Arrows  */}
+      {prevStory && (
+        <Link
+          to={`/storyboard/${prevStory.level}/${prevStory.slug}`}
+          className={`fixed left-2 sm:left-6 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full bg-black/40 border border-white/10 backdrop-blur-md text-white/70 hover:text-[#04bade] hover:bg-[#04bade]/20 hover:border-[#04bade]/40 transition-all ${isTransitioning ? "pointer-events-none" : ""}`}
+          aria-label="Previous chapter"
+        >
+          <ArrowLeft className="w-5 h-5 sm:w-7 sm:h-7" />
+        </Link>
+      )}
+
+      {nextStory && (
+        <Link
+          to={`/storyboard/${nextStory.level}/${nextStory.slug}`}
+          className={`fixed right-2 sm:right-6 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full bg-black/40 border border-white/10 backdrop-blur-md text-white/70 hover:text-[#04bade] hover:bg-[#04bade]/20 hover:border-[#04bade]/40 transition-all ${isTransitioning ? "pointer-events-none" : ""}`}
+          aria-label="Next chapter"
+        >
+          <ArrowRight className="w-5 h-5 sm:w-7 sm:h-7" />
+        </Link>
+      )}
     </div>
   );
 }

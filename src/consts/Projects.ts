@@ -17,7 +17,7 @@ export const vesselLogItems: VesselLogItem[] = [
     description:
       "A gamified cybersecurity learning platform to combat job scams and raise awareness.",
     type: "project",
-    link: "https://youngguards.tech/en-US",
+    link: "https://youngguards.tech/en-US/team",
     isReady: true,
   },
   {
@@ -27,7 +27,7 @@ export const vesselLogItems: VesselLogItem[] = [
     description:
       "A native mobile app built to enhance women's safety with immediate emergency response tools, while raising cross-gender awareness on safety and sexuality to combat sexual misconduct through software engineering.",
     type: "project",
-    link: "https://guardina.ammarhairi.tech/",
+    link: "https://guardina.ammarhairi.tech/en/contributors",
     isReady: true,
   },
   // --- Contributions ---

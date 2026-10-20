@@ -8,7 +8,7 @@ export default function Awards() {
       <div className="fixed inset-0 pointer-events-none z-0">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-90 scale-105"
-          style={{ backgroundImage: "url('/story/storyboard_menu.jpeg')" }}
+          style={{ backgroundImage: "url('/story/background/storyboard_menu.jpeg')" }}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-black" />
       </div>
