@@ -43,7 +43,7 @@ export const vesselLogItems: VesselLogItem[] = [
       "An 8-bit story game of my Annapurna Base Camp trek, built from 1,800+ group photos with face recognition, a serverless backend, and a pixel-art journey map. Made as a surprise gift for 40+ trekking companions.",
     type: "project",
     category: "game",
-    link: "https://guardina.org/en/contributors",
+    link: "https://abctrip2026.ammarhairi.tech/",
     isReady: true,
   },
   // --- Contributions ---
