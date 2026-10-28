@@ -119,7 +119,7 @@ export default function ContactPage() {
       <div
         className="fixed inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/contact/alone_at_the_sea.png')",
+          backgroundImage: "url('/contact/alone_at_the_sea.webp')",
           opacity: 0.2,
           zIndex: -1,
         }}

@@ -135,7 +135,7 @@ export default function VesselLog() {
       <div
         className="fixed inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/projects/voyage.png')",
+          backgroundImage: "url('/projects/voyage.webp')",
           opacity: 0.2,
           zIndex: -1,
         }}

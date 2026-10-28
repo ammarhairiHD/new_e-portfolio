@@ -140,7 +140,7 @@ export default function SkillsPage() {
       <div
         className="fixed inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/skills/inside_the_ships.png')",
+          backgroundImage: "url('/skills/inside_the_ships.webp')",
           opacity: 0.5,
           zIndex: -1,
         }}

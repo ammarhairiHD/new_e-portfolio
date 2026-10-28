@@ -15,7 +15,7 @@ export const vesselLogItems: VesselLogItem[] = [
   // --Projects--
   {
     id: 1,
-    image: "/projects/youngguards.png",
+    image: "/projects/youngguards.webp",
     label: "Young Guards",
     description:
       "A gamified cybersecurity learning platform to combat job scams and raise awareness.",
@@ -26,7 +26,7 @@ export const vesselLogItems: VesselLogItem[] = [
   },
   {
     id: 2,
-    image: "/projects/guardina.png",
+    image: "/projects/guardina.webp",
     label: "Guardina",
     description:
       "A native mobile app built to enhance women's safety with immediate emergency response tools, while raising cross-gender awareness on safety and sexuality to combat sexual misconduct through software engineering.",
@@ -37,7 +37,7 @@ export const vesselLogItems: VesselLogItem[] = [
   },
   {
     id: 3,
-    image: "/projects/abctrip.png",
+    image: "/projects/abctrip.webp",
     label: "ABC Trip 2026 Game",
     description:
       "An 8-bit story game of my Annapurna Base Camp trek, built from 1,800+ group photos with face recognition, a serverless backend, and a pixel-art journey map. Made as a surprise gift for 40+ trekking companions.",
@@ -49,7 +49,7 @@ export const vesselLogItems: VesselLogItem[] = [
   // --- Contributions ---
   {
     id: 4,
-    image: "/projects/bubbleso2.png",
+    image: "/projects/bubbleso2.webp",
     label: "Bubbles O2 E-commerce",
     description:
       "Contributed to the development and maintenance of the e-commerce platform for Bubbles O2.",
@@ -60,7 +60,7 @@ export const vesselLogItems: VesselLogItem[] = [
   },
   {
     id: 5,
-    image: "/projects/kd-portal.png",
+    image: "/projects/kd-portal.webp",
     label: "KD-Portal (Ministry of Digital)",
     description:
       "Assisted in the development and enhancement of the digital portal for the Ministry of Digital.",
@@ -71,7 +71,7 @@ export const vesselLogItems: VesselLogItem[] = [
   },
   {
     id: 6,
-    image: "/projects/hansards.png",
+    image: "/projects/hansards.webp",
     label: "Hansards Parlimen",
     description:
       "Contributed across the full stack by resolving critical bugs and supporting User Acceptance Testing (UAT) for client-requested enhancements on an existing application.",
@@ -82,7 +82,7 @@ export const vesselLogItems: VesselLogItem[] = [
   },
   {
     id: 7,
-    image: "/projects/sekolahku.png",
+    image: "/projects/sekolahku.webp",
     label: "Sekolahku",
     description:
       "Collaborated with senior engineers to build the backend from scratch, optimized search queries alongside data scientists using Elasticsearch, deployed via Docker and AWS, and implemented UI/UX-compliant frontend features.",
@@ -93,7 +93,7 @@ export const vesselLogItems: VesselLogItem[] = [
   },
   {
     id: 8,
-    image: "/projects/myfasa.png",
+    image: "/projects/myfasa.webp",
     label: "Myfasa",
     description:
       "Engineered on-premise infrastructure via SSH/PDSA while adapting to PHP to build backend functionality. Maintained staging/local database workflows, collaborated cross-functionally to translate business requirements into technical implementations, and managed deployment setups.",
@@ -104,7 +104,7 @@ export const vesselLogItems: VesselLogItem[] = [
   },
   {
     id: 9,
-    image: "/projects/myds.png",
+    image: "/projects/myds.webp",
     label: "MYDS",
     description:
       "Created a standalone, zero-dependency HTML/CSS/JS component library for legacy government PHP applications (MyDS), allowing developers to copy-paste UI components styled like shadcn without NPM overhead; utilized Turborepo/Turbopack to streamline the build system.",

@@ -43,7 +43,7 @@ export default function AttributionsPage() {
       <div
         className="fixed inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/credits/chilling_at_the_sea.png')",
+          backgroundImage: "url('/credits/chilling_at_the_sea.webp')",
           opacity: 0.2,
           zIndex: -1,
         }}

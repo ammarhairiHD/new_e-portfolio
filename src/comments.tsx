@@ -69,7 +69,7 @@ export default function CommentsPage() {
       <div
         className="fixed inset-0 bg-cover bg-bottom"
         style={{
-          backgroundImage: "url('/comments/message_sea.png')",
+          backgroundImage: "url('/comments/message_sea.webp')",
           opacity: 0.2,
           zIndex: -1,
         }}
