@@ -97,9 +97,20 @@ export default function VesselLog() {
           borderColor: item.type === "project" ? "#b53389" : "#04bade",
         }}
       />
-      <h3 className="text-2xl font-bold font-8bit-retro mb-2 text-white">
-        {item.label}
-      </h3>
+      <div className="flex items-center justify-between mb-2">
+        <h3 className="text-2xl font-bold font-8bit-retro text-white">
+          {item.label}
+        </h3>
+        <span
+          className="text-xs uppercase tracking-wide px-2 py-1 rounded-full border shrink-0 ml-2"
+          style={{
+            borderColor: item.type === "project" ? "#b53389" : "#04bade",
+            color: item.type === "project" ? "#b53389" : "#04bade",
+          }}
+        >
+          {item.category}
+        </span>
+      </div>
       <p className="text-gray-300 text-sm">{item.description}</p>
       {item.isReady ? (
         <a 

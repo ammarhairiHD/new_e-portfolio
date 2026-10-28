@@ -9,6 +9,7 @@ export interface ChapterItem {
   description: string;
   story?: string;
   quote?: string;
+  finale?: boolean;
 }
 
 export interface LevelItem {
@@ -86,6 +87,20 @@ export const storyLevels: LevelItem[] = [
         quote:
           '"The people who are crazy enough to think they can change the world are the ones who do." - Steve Jobs',
       },
+      {
+        slug: "6",
+        chapterNumber: 6,
+        label: "Chapter VI: The First Time I Moved",
+        background: "/story/background/24/story_6.jpeg",
+        year: "2024 - 2025",
+        description:
+          "At 24, something in me began to change. I was still afraid, still unsure, and still carrying old wounds—but for the first time, I chose to move instead of staying where I was.",
+        story:
+          "I was young, shy, and scared for most of my life. I did not believe in myself the way I should have. I often lied to myself, avoided chances, and stayed inside the version of me that felt safe—even when that version was unhappy.\n\nBut when I reached 24, something changed. I started freelancing. I began approaching clients, taking on work, working out, and pitching Young Guards. I asked myself: who would accept a former marine deck rating trying to build something in IT? Maybe nobody. But I tried anyway.\n\nWas I afraid? Yes. Did I feel pain when I was rejected, when I trained alone, when I pitched alone, and when nothing seemed certain? Yes. But I realised something important: staying where I was hurt too. The pain of trying to grow felt better than the pain of remaining stuck.\n\nI did not become perfect. I still made mistakes, and I still had days when I did not like myself. But I started building systems, winning trust, receiving a RM35K grant for my business, and getting my first proper job in IT. Slowly, I became someone I once thought I could never be.\n\nI do not want to go back to the person I was. I want to keep becoming the man I want to be. Not because it is easy, but because I finally understand that growth asks for courage, pain, patience, and faith.",
+        quote:
+          '"The pain of discipline is temporary, but the pain of regret lasts forever."',
+        finale: true,
+      },
     ],
   },
   {
@@ -156,6 +171,18 @@ export const storyLevels: LevelItem[] = [
           "While I was in the Himalayas, another dream became real: I won the Best Malaysia Website Award for 2025. My boss represented me at the ceremony, and I received the news surrounded by the mountains.",
         story:
           "At 25, I am still learning. I am balancing work, business, study, relationships, and the responsibility of leading a growing team. I do not know what 2027 will bring. Will it bring success, pain, new opportunities, or another difficult lesson? Maybe all of them.\n\nBut Level 25 taught me that growth is not only about achievements. It is about becoming kinder, more supportive, more understanding, and more human. I want to become the best version of myself—not because life will become easy, but because I want to face whatever comes next with a better heart.\n\nInshaAllah.",
+      },
+      {
+        slug: "6",
+        chapterNumber: 6,
+        label: "Chapter VI: Not There Yet, Still Moving",
+        background: "/story/background/24/story_6.jpeg",
+        year: "2026",
+        description:
+          "Someone once asked me how I manage work, part-time study, a business with nine people, workouts, and the things I love, like hiking. I did not have a perfect answer. I am not the man I want to be yet—I am simply still trying.",
+        story:
+          "Am I becoming the man I wanted to be? Honestly, no. I am still far from that.\n\nWhen someone asked me how I managed work, part-time study, a business with nine people, workouts, and hiking, I did not really know what to say. I am not kind enough, brilliant enough, strong enough, or successful enough to call myself an example. I know myself. I still have weaknesses, bad days, fears, and parts of me I am still trying to fix.\n\nBut maybe the answer is simpler than I thought: I am trying. Really trying.\n\nNobody is born perfect. Everyone is carrying a goal that feels difficult, frustrating, or even impossible. Maybe it is saving people, building something meaningful, making the world better, stopping wars, fighting climate change, or hiking fourteen peaks in five months. Those dreams can sound impossible—but what matters is that you keep trying.\n\nTry when you are tired. Try when you feel behind. Try when nobody claps for you. Try again the next day. Because to become the person you want to be, this is what it takes: consistency.\n\nMaybe one day, the goal will be achieved. Until then, I will keep trying.",
+        finale: true,
       },
     ],
   },

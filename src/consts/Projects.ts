@@ -1,9 +1,12 @@
+export type ProjectCategory = "game" | "web" | "mobile" | "library";
+
 export interface VesselLogItem {
   id: number;
   image: string;
   label: string;
   description: string;
   type: "project" | "contribution";
+  category: ProjectCategory;
   link: string;
   isReady: boolean;
 }
@@ -17,6 +20,7 @@ export const vesselLogItems: VesselLogItem[] = [
     description:
       "A gamified cybersecurity learning platform to combat job scams and raise awareness.",
     type: "project",
+    category: "web",
     link: "https://youngguards.tech/en-US/team",
     isReady: true,
   },
@@ -27,6 +31,18 @@ export const vesselLogItems: VesselLogItem[] = [
     description:
       "A native mobile app built to enhance women's safety with immediate emergency response tools, while raising cross-gender awareness on safety and sexuality to combat sexual misconduct through software engineering.",
     type: "project",
+    category: "mobile",
+    link: "https://guardina.org/en/contributors",
+    isReady: true,
+  },
+  {
+    id: 3,
+    image: "/projects/abctrip.png",
+    label: "ABC Trip 2026 Game",
+    description:
+      "An 8-bit story game of my Annapurna Base Camp trek, built from 1,800+ group photos with face recognition, a serverless backend, and a pixel-art journey map. Made as a surprise gift for 40+ trekking companions.",
+    type: "project",
+    category: "game",
     link: "https://guardina.org/en/contributors",
     isReady: true,
   },
@@ -38,6 +54,7 @@ export const vesselLogItems: VesselLogItem[] = [
     description:
       "Contributed to the development and maintenance of the e-commerce platform for Bubbles O2.",
     type: "contribution",
+    category: "web",
     link: "https://bubbleso2.com/",
     isReady: true,
   },
@@ -48,6 +65,7 @@ export const vesselLogItems: VesselLogItem[] = [
     description:
       "Assisted in the development and enhancement of the digital portal for the Ministry of Digital.",
     type: "contribution",
+    category: "web",
     link: "https://www.digital.gov.my/",
     isReady: true,
   },
@@ -58,6 +76,7 @@ export const vesselLogItems: VesselLogItem[] = [
     description:
       "Contributed across the full stack by resolving critical bugs and supporting User Acceptance Testing (UAT) for client-requested enhancements on an existing application.",
     type: "contribution",
+    category: "web",
     link: "https://hansard.parlimen.gov.my/",
     isReady: true,
   },
@@ -68,26 +87,29 @@ export const vesselLogItems: VesselLogItem[] = [
     description:
       "Collaborated with senior engineers to build the backend from scratch, optimized search queries alongside data scientists using Elasticsearch, deployed via Docker and AWS, and implemented UI/UX-compliant frontend features.",
     type: "contribution",
+    category: "web",
     link: "https://sekolahku.moe.gov.my/",
     isReady: true,
   },
   {
-    id: 7,
+    id: 8,
     image: "/projects/myfasa.png",
     label: "Myfasa",
     description:
       "Engineered on-premise infrastructure via SSH/PDSA while adapting to PHP to build backend functionality. Maintained staging/local database workflows, collaborated cross-functionally to translate business requirements into technical implementations, and managed deployment setups.",
     type: "contribution",
+    category: "web",
     link: "Link is not ready - Internal / Staging Only",
     isReady: false,
   },
   {
-    id: 8,
+    id: 9,
     image: "/projects/myds.png",
     label: "MYDS",
     description:
       "Created a standalone, zero-dependency HTML/CSS/JS component library for legacy government PHP applications (MyDS), allowing developers to copy-paste UI components styled like shadcn without NPM overhead; utilized Turborepo/Turbopack to streamline the build system.",
     type: "contribution",
+    category: "library",
     link: "https://design.digital.gov.my/en",
     isReady: true,
   },
